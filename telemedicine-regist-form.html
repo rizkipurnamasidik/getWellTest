@@ -1,0 +1,77 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telemedicine Registration</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+</head>
+<body>
+    <main id="main">
+        <section id="right">
+            <h1>Online Telemedicine Registration</h1>
+            <form action="#">
+                <div id="form-card" class="form-field">
+                    <label for="name">Name</label>
+                    <input name="name" placeholder="your name">
+                </div>
+                <div id="form-card" class="form-field">
+                    <label for="name">Email</label>
+                    <input name="email" placeholder="name@mail.com">
+                </div>
+                <div id="form-card"class="form-field">
+                    <label for="name">Cell Phone</label>
+                    <input type="number" name="phoneNumber">
+                </div>
+                <div id="form-card" class="form-field">
+                    <label for="name">Doctor</label>
+                    <select name="doctor" id="">
+                        <option value="default" selected>Chose Doctor...</option>
+                        <option value="dr001">Dr A</option>
+                        <option value="dr001">Dr A</option>
+                        <option value="dr001">Dr A</option>
+                        <option value="dr001">Dr A</option>
+
+                    </select>
+                </div>
+                
+                <div id="form-date" class="form-field">
+                    <label for="expiry-month">Schedule:</label>
+                    <div id="date-val">
+                    <input type="text" id="date" name="phoneNumber" placeholder="Date">
+                    <select id="expiry-year" required>
+                        <option id="trans-label_year" value="" default="" selected="selected">Time</option>
+                        <option value="time">10:00</option>
+                        <option value="time">11:00</option>
+                        <option value="time">12:00</option>
+                        <option value="time">13:00</option>
+                        <option value="time">14:00</option>
+                    </div>
+                </div>
+                <div id="form-card"class="form-field">
+                    <label for="name">Reason for visit</label>
+                    <input name="insert here">
+                </div>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+   
+    <script type='text/javascript'>
+        $(document).ready(function(){
+        
+         $('#date').datepicker({
+          dateFormat: "yy-mm-dd",
+          minDate: 0
+        
+         });
+        
+        });
+        </script>
+   
+</body>
+</html>
